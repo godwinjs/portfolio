@@ -1,0 +1,148 @@
+{
+  "main": {
+    "name": "Godwin Ogbodo",
+    "description": "Software Engineer, Web Developer",
+    "image": "profilePic.jpeg",
+    "bio": "I'm a passionate frontend developer who is enthusiastic about building dynamic, interactive, and user-friendly web applications. I have a deep understanding of web development technologies, including NextJs, ReduxToolkit, Tailwind and JavaScript, and I'm always looking for ways to improve my skills and stay up-to-date with the latest trends and advancements in frontend development. \nI'm  highly skilled in designing and developing responsive and accessible web interfaces that are intuitive and easy to use. I understand the importance of user experience, web technologies, and SEO principles and I'm dedicated to creating interfaces that are visually appealing, functional, and accessible to all users.",
+    "contactmessage": "Send me a message",
+    "email": "godwinikechukwu.dev@gmail.com",
+    "phone": "+234-8103023419",
+    "github": "https://github.com/godwinjs",
+    "project": "https://github.com/godwinjs/portfolio",
+    "address": {
+      "street": "17a Alaba international",
+      "city": "Ojo,",
+      "state": "Lagos State"
+    },
+    "website": "http://www.timbakerdev.com",
+    "resumedownload": "https://drive.google.com/file/d/1N5BWu41pi_PAYxlzfpFJrG-C2eN3gABO/view?usp=sharing",
+    "social": [
+      
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/GodwinCod3s",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/godwin-ikechukwu-677881254/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/godwinjs",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Skills",
+    "education": [
+      {
+        "school": "Institute of Management and Technology, Enugu",
+        "degree": "National Diploma in Mechanical Engineering",
+        "graduated": "November 2019",
+        "description": "Obtained A National Diploma In Mechanical Engineering. Graduated with a GPA of 3.0."
+      }
+    ],
+    "work": [
+      {
+        "company": "Techxperience Ltd",
+        "title": "Front-end Engineer (Contract)",
+        "years": "September 2022 - Present"
+      },
+      {
+        "company": "HNG Internship",
+        "title": "Front-end Intern",
+        "years": "August 2021 - November 2021"
+      },
+      {
+        "company": "ITScopes Limited",
+        "title": "Front-end Engineer",
+        "years": "June 2021 - November 2021",
+        "description":"Contract Software Engineer, Web Developer, Building E-commerce Applications with interactive UIs with React"
+      },
+      {
+        "company": "Zuri Team",
+        "title": "Front-end Intern",
+        "years": "March 2021 - June 2021"
+      },
+      {
+        "company": "Andela",
+        "title": "Internship Student",
+        "years": "January 2019 - July 2019",
+        "description": "Developed a bus transportation booking server that enables registered users to book a trip and a bus. This shows a variety of locations and buses to travel to and from with style. API: https://github.com/zemchuks/Way_Ferer"
+      },
+      {
+        "company": "World Gurus Tech",
+        "title": "Intern Trainee ",
+        "years": "January 2017 - September 2017",
+        "description": "Work on Internally used software. participated in project build up."
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaSript",
+        "level": "90%"
+      },
+      {
+        "name": "HTML",
+        "level": "100%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "80%"
+      },
+      {
+        "name": "CSS",
+        "level": "90%"
+      },
+      {
+        "name": "NODE",
+        "level": "50%"
+      },
+      {
+        "name": "Tailwind",
+        "level": "80%"
+      },
+      {
+        "name": "Redux",
+        "level": "70%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Oramsys",
+        "category": "Afrexim Bank app that manages and organises transactions and record of shipping information",
+        "image": "oramgif.gif",
+        "url": "https://oramsys3.netlify.app/"
+      },
+      {
+        "title": "Records API",
+        "category": "Fetching data from API with patient records",
+        "image": "records.gif",
+        "url": "https://github.com/zemchuks/ENYE-Phase1"
+      },
+      {
+        "title": "GitHub Finder",
+        "category": "Searches for github users using GitHub API",
+        "image": "projects1.png",
+        "url": "https://github.com/zemchuks/Finder2"
+      },
+      {
+        "title": "Shopping Cart",
+        "category": "A shopping Cart website with React that has payment features",
+        "image": "project2.png",
+        "url": "https://github.com/zemchuks/shopping-cart"
+      },
+      {
+        "title": "Contact Keeper",
+        "category": "An online Storage of personal contact info that is secure",
+        "image": "project3.png",
+        "url": "https://github.com/zemchuks/contact-keeper-MERN"
+      }
+    ]
+  }
+}
