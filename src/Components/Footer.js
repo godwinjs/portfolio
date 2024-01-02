@@ -20,7 +20,7 @@ const Footer = ({ data }) => {
            </ul>
 
            <ul className="copyright" style={{ color: 'white'}}>
-              <li>&copy; Copyright 2023 Bruno Ezemba</li>
+              <li>&copy; Copyright {new Date().getFullYear()} Godwin Ogbodo</li>
            </ul>
 
         </div>
