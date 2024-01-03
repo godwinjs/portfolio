@@ -114,34 +114,22 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Oramsys",
-        "category": "Afrexim Bank app that manages and organises transactions and record of shipping information",
-        "image": "oramgif.gif",
-        "url": "https://oramsys3.netlify.app/"
-      },
-      {
         "title": "Records API",
         "category": "Fetching data from API with patient records",
         "image": "records.gif",
-        "url": "https://github.com/zemchuks/ENYE-Phase1"
-      },
-      {
-        "title": "GitHub Finder",
-        "category": "Searches for github users using GitHub API",
-        "image": "projects1.png",
-        "url": "https://github.com/zemchuks/Finder2"
+        "url": "https://github.com/godwinjs"
       },
       {
         "title": "Shopping Cart",
         "category": "A shopping Cart website with React that has payment features",
         "image": "project2.png",
-        "url": "https://github.com/zemchuks/shopping-cart"
+        "url": "https://github.com/godwinjs"
       },
       {
         "title": "Contact Keeper",
         "category": "An online Storage of personal contact info that is secure",
         "image": "project3.png",
-        "url": "https://github.com/zemchuks/contact-keeper-MERN"
+        "url": "https://github.com/godwinjs"
       }
     ]
   }
