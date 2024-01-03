@@ -48,8 +48,8 @@ const Resume = ({ data }) => {
 
 
           <section id='languages' className='languages'>
-            <h2 className="md text-center my-2">Proficient Languages</h2>
-              <div className='container flex'>
+            <h2 className="md text-center my-2">Proficient Languages and Frameworks</h2>
+            <div className='container flex'>
                 <div className="card">
                 <h4>HTML</h4>
                 <img src="images/html.png" alt="" />
