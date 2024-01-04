@@ -2,7 +2,9 @@ import React from 'react';
 import { useForm } from '@formspree/react';
 
 const Contact = ({ data }) => {
+   const all = useForm("mnqloger");
    const [state, handleSubmit] = useForm("mnqloger");
+   console.log(all)
 
    if (state.succeeded) {
       return <h5 style={{textAlign: 'center', alignItems: 'center', color: 'white', fontSize: '400', margin: '30px'}}>Thanks for contacting me. I've recieved your message and will get back to you!</h5>;
