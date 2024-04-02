@@ -35,7 +35,7 @@ const App = () => {
         <div className="App">
           <Header data={resume.main}/>
           <About data={resume.main}/>
-          <Resume data={resume.resume}/>
+          {/* <Resume data={resume.resume}/> */}
           <Portfolio data={resume.portfolio}/>
           <Contact data={resume.main}/>
           <Footer data={resume.main}/>
