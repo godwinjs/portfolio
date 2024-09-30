@@ -7,7 +7,7 @@ const Contact = ({ data }) => {
    if (state.succeeded) {
       return <h5 style={{textAlign: 'center', alignItems: 'center', color: 'white', fontSize: '400', margin: '30px'}}>Thanks for contacting me. I've recieved your message and will get back to you!</h5>;
   }
-    if(data){
+    if(data) {
       var name = data.name;
       var street = data.address.street;
       var city = data.address.city;
@@ -49,7 +49,7 @@ const Contact = ({ data }) => {
                   <input type="submit" value="Submit" />
             </form>
 
-           <div id="message-warning"> Error boy</div>
+           <div id="message-warning"> Error</div>
 				   <div id="message-success">
                   <i className="fa fa-check"></i>Your message was sent, thank you!<br />
 				   </div>
