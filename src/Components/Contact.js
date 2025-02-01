@@ -8,34 +8,32 @@ const Contact = ({ data }) => {
 
    const handleSubmit = (e) => {
       e.preventDefault()
-      
+
       console.log(form)
 
       setSentMail(true)
-      // fetch("https://testores.vercel.app/api/mail", {
-      //    method: "POST",
-      //    headers: {
-      //      "Content-Type": "application/json",
-      //    },
-      //    body: JSON.stringify({
-      //      message: form.stringify,
-      //      to: "ogbodogodwin.dev@gmail.com, godwinikechukwu.dev@gmail.com",
-      //      subject: "New Message from portfolio Contact Form",
-      //    }),
-      //  })
-      //    .then(async (response) => {
-      //      if (!response.ok) {
-      //        throw new Error("Failed to send email");
-      //      }
-      //      const data = await response.json();
-      //      console.log(data);
-      //      setSendingMail(false);
-      //      setSentMail(true);
-      //    })
-      //    .catch((err) => {
-      //      console.log("There was an error sending email", err);
-      //      setSendingMail(false);
-      //    });
+      fetch("https://testores.vercel.app/api/mail", {
+         method: "POST",
+         headers: {
+           "Content-Type": "application/json",
+         },
+         body: JSON.stringify({
+           message: form,
+           to: "ogbodogodwin.dev@gmail.com, godwinikechukwu.dev@gmail.com",
+           subject: "New Message from portfolio Contact Form",
+         }),
+       })
+         .then(async (response) => {
+           if (!response.ok) {
+             throw new Error("Failed to send email");
+           }
+           const data = await response.json();
+           console.log(data);
+           setSentMail(true);
+         })
+         .catch((err) => {
+           console.log("There was an error sending email", err);
+         });
    }
 
    if (sentMail) {
