@@ -9,9 +9,6 @@ const Contact = ({ data }) => {
    const handleSubmit = (e) => {
       e.preventDefault()
 
-      console.log(form)
-
-      setSentMail(true)
       fetch("https://testores.vercel.app/api/mail", {
          method: "POST",
          headers: {
