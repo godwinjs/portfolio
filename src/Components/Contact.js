@@ -1,15 +1,15 @@
 import React from 'react';
-import { useForm } from '@formspree/react';
+import { useForm } from '../hooks/useForm';
 
 const Contact = ({ data }) => {
 
-   // const [state, handleSubmit] = useForm("mnqloger");
+   const [ form, setForm ] = useForm({ name: '', email: '', message: ''});
    const [ sentMail, setSentMail] = React.useState(false)
 
    const handleSubmit = (e) => {
       e.preventDefault()
-
-      console.log(e.target.value, e)
+      
+      console.log(form)
 
       setSentMail(true)
       // fetch("https://testores.vercel.app/api/mail", {
@@ -73,11 +73,11 @@ const Contact = ({ data }) => {
 				<form onSubmit={handleSubmit} id="fs-frm" name="simple-contact-form" acceptCharset="utf-8">
                <fieldset id="fs-frm-inputs">
                   <label htmlFor="full-name">Full Name</label>
-                  <input type="text" name="name" id="full-name" placeholder="First and Last" required />
+                  <input type="text" onChange={setForm} name="name" id="full-name" placeholder="First and Last" required />
                   <label htmlFor="email-address">Email Address</label>
-                  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required />
+                  <input type="email" onChange={setForm} name="email" id="email-address" placeholder="email@domain.tld" required />
                   <label htmlFor="message">Message</label>
-                  <textarea rows="5" name="message" id="message" placeholder="" required></textarea>
+                  <textarea rows="5" onChange={setForm} name="message" id="message" placeholder="" required></textarea>
                   <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
                </fieldset>
                   <input type="submit" value="Submit" />
