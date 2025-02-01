@@ -3,9 +3,9 @@ import ReactGA from 'react-ga';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import About from './Components/About';
-import Resume from './Components/Resume';
+// import Resume from './Components/Resume';
 import Contact from './Components/Contact';
-import Portfolio from './Components/Portfolio';
+// import Portfolio from './Components/Portfolio';
 import AOS from 'aos';
 
 const App = () => {
@@ -36,7 +36,7 @@ const App = () => {
           <Header data={resume.main}/>
           <About data={resume.main}/>
           {/* <Resume data={resume.resume}/> */}
-          <Portfolio data={resume.portfolio}/>
+          {/* <Portfolio data={resume.portfolio}/> */}
           <Contact data={resume.main}/>
           <Footer data={resume.main}/>
         </div>

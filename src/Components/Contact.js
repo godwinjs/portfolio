@@ -2,11 +2,45 @@ import React from 'react';
 import { useForm } from '@formspree/react';
 
 const Contact = ({ data }) => {
-   const [state, handleSubmit] = useForm("mnqloger");
 
-   if (state.succeeded) {
+   // const [state, handleSubmit] = useForm("mnqloger");
+   const [ sentMail, setSentMail] = React.useState(false)
+
+   const handleSubmit = (e) => {
+      e.preventDefault()
+
+      console.log(e.target.value, e)
+
+      setSentMail(true)
+      // fetch("https://testores.vercel.app/api/mail", {
+      //    method: "POST",
+      //    headers: {
+      //      "Content-Type": "application/json",
+      //    },
+      //    body: JSON.stringify({
+      //      message: form.stringify,
+      //      to: "ogbodogodwin.dev@gmail.com, godwinikechukwu.dev@gmail.com",
+      //      subject: "New Message from portfolio Contact Form",
+      //    }),
+      //  })
+      //    .then(async (response) => {
+      //      if (!response.ok) {
+      //        throw new Error("Failed to send email");
+      //      }
+      //      const data = await response.json();
+      //      console.log(data);
+      //      setSendingMail(false);
+      //      setSentMail(true);
+      //    })
+      //    .catch((err) => {
+      //      console.log("There was an error sending email", err);
+      //      setSendingMail(false);
+      //    });
+   }
+
+   if (sentMail) {
       return <h5 style={{textAlign: 'center', alignItems: 'center', color: 'white', fontSize: '400', margin: '30px'}}>Thanks for contacting me. I've recieved your message and will get back to you!</h5>;
-  }
+   }
     if(data) {
       var name = data.name;
       var street = data.address.street;
@@ -36,7 +70,7 @@ const Contact = ({ data }) => {
 
          <div className="row">
             <div className="eight columns">
-				<form onSubmit={handleSubmit} id="fs-frm" name="simple-contact-form" acceptCharset="utf-8" action="https://formspree.io/f/mnqloger" method="post">
+				<form onSubmit={handleSubmit} id="fs-frm" name="simple-contact-form" acceptCharset="utf-8">
                <fieldset id="fs-frm-inputs">
                   <label htmlFor="full-name">Full Name</label>
                   <input type="text" name="name" id="full-name" placeholder="First and Last" required />
